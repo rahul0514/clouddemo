@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'hellocloud.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'scalerdb',
+        'USER': 'postgres',
+        'PASSWORD': 'scaler1234',
+        'HOST': 'scalerdb.cxi8ewg6s8ax.ap-southeast-2.rds.amazonaws.com',
+        'PORT': 5432,
     }
 }
 
